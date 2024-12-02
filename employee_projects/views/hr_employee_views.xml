@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_employee_form_inherit" model="ir.ui.view">
+        <field name="name">view.employee.form.inherit</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="model">hr.employee</field>
+        <field name="arch" type="xml">
+            <div id="o_work_employee_main" position="inside">
+                <group name="employee_projects" string="Employee Projects">
+                    <field name="total_projects"/>
+                </group>
+            </div>
+        </field>
+    </record>
+</odoo>
